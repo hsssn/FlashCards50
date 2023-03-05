@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Practice
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3" id="passingdiv" style="display: none;">{{ termdata | tojson }}</div>   
+    <div class="mb-3" id="practice-div">
+        <h4 class="display-6">Term</h4>
+    </div>
+    <div class="mb-3" id="termm">blah</div>
+    <div class="mb-3" id="practice-div">
+        <h4 class="display-6">Meaning</h4>
+    </div>
+    <div class="mb-3" id="meaning">blah</div>
+    <div class="mb-3">
+        <button type="button" class="btn btn-outline-light" id="next">Next</button>
+    </div>
+    <script src="../static/app.js"></script>
+
+{% endblock %}

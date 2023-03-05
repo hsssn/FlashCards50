@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid" id="loginform">
+        <h3 style="padding-top: 10px; padding-bottom: 20px;">Login</h3>
+        <form action="/login" method="post">
+            <input autocomplete="off" autofocus id="username" class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+            <button class="btn btn-outline-light" type="submit" style="margin-top: 20px;">Login</button>
+        </form>
+    </div>
+{% endblock %}
